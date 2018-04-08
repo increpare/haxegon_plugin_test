@@ -24,7 +24,7 @@ import haxe.macro.Expr;
 		
 		var config = {
 			
-			build: "17",
+			build: "1",
 			company: "Your name here",
 			file: "simplelayers",
 			fps: 60,

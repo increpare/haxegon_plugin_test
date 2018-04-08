@@ -1042,7 +1042,7 @@ $hxClasses["ApplicationMain"] = ApplicationMain;
 ApplicationMain.__name__ = ["ApplicationMain"];
 ApplicationMain.main = function() {
 	var projectName = "simplelayers";
-	var config = { build : "17", company : "Your name here", file : "simplelayers", fps : 60, name : "Simple Layers Example", orientation : "landscape", packageName : "com.yournamehere.simplelayers", version : "1.0.0", windows : [{ allowHighDPI : true, alwaysOnTop : false, antialiasing : 0, background : 0, borderless : false, colorDepth : 16, depthBuffer : false, display : 0, fullscreen : false, hardware : true, height : 0, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : true, stencilBuffer : true, title : "Simple Layers Example", vsync : true, width : 0, x : null, y : null}]};
+	var config = { build : "1", company : "Your name here", file : "simplelayers", fps : 60, name : "Simple Layers Example", orientation : "landscape", packageName : "com.yournamehere.simplelayers", version : "1.0.0", windows : [{ allowHighDPI : true, alwaysOnTop : false, antialiasing : 0, background : 0, borderless : false, colorDepth : 16, depthBuffer : false, display : 0, fullscreen : false, hardware : true, height : 0, hidden : false, maximized : false, minimized : false, parameters : { }, resizable : true, stencilBuffer : true, title : "Simple Layers Example", vsync : true, width : 0, x : null, y : null}]};
 	lime_system_System.__registerEntryPoint(projectName,ApplicationMain.create,config);
 };
 ApplicationMain.create = function(config) {
@@ -5098,6 +5098,7 @@ Main.__name__ = ["Main"];
 Main.prototype = {
 	init: function() {
 		Particle.bah();
+		haxe_Log.trace(Particle,{ fileName : "Main.hx", lineNumber : 8, className : "Main", methodName : "init"});
 		Layer.create("newlayer");
 		Layer.attach("newlayer");
 		Layer.drawto("newlayer");
@@ -44721,7 +44722,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 157226;
+	this.version = 30600;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = ["lime","utils","AssetCache"];
