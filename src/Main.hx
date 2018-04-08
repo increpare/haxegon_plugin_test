@@ -2,11 +2,8 @@ import haxegon.*;
 
 class Main {
   function init(){
+	  Particle.enable();
 
-		//just calling this to make sure the class isn't totally eliminated
-	  Particle.bah();
-		trace(Particle);
-		
     //Let's create a layer!
 		Layer.create("newlayer");
 		//And attach it to the canvas

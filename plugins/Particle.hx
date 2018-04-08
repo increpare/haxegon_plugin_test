@@ -1,13 +1,8 @@
 import haxegon.*;
 
-@:keep
 @:access(haxegon.Core)
 @:access(haxegon.Gfx)
 class Particle {
-   public static function bah(){
-
-   }
-
     public static function enable(){
         trace("A");
         Core.registerplugin("particle", "0.1.0");
